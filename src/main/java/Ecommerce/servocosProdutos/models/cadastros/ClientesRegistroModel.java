@@ -1,12 +1,13 @@
 package Ecommerce.servocosProdutos.models.cadastros;
 
+import Ecommerce.servocosProdutos.models.feedbacks.ClientesFeedbackModel;
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "clientesInformacoesBase", schema = "clientes")
-public class ClientesRegistroModel implements Serializable {
+public class ClientesRegistroModel extends ClientesFeedbackModel implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

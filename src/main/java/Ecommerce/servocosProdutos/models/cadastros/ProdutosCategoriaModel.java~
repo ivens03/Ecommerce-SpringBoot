@@ -1,7 +1,8 @@
 package Ecommerce.servocosProdutos.models.cadastros;
 
-import Ecommerce.servocosProdutos.enums.ProdutosCategoriasEnum;
+import Ecommerce.servocosProdutos.enums.CategoriaProdutosEnum;
 import jakarta.persistence.*;
+
 import java.io.Serializable;
 
 @Entity
@@ -20,7 +21,7 @@ public class ProdutosCategoriaModel implements Serializable {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private ProdutosCategoriasEnum categoriaProdutosEnum;
+    private CategoriaProdutosEnum categoriaProdutosEnum;
 
     public Long getCategoriaId() {
         return categoriaId;
@@ -38,11 +39,11 @@ public class ProdutosCategoriaModel implements Serializable {
         this.tipoProduto = tipoProduto;
     }
 
-    public ProdutosCategoriasEnum getCategoriaProdutosEnum() {
+    public CategoriaProdutosEnum getCategoriaProdutosEnum() {
         return categoriaProdutosEnum;
     }
 
-    public void setCategoriaProdutosEnum(ProdutosCategoriasEnum categoriaProdutosEnum) {
+    public void setCategoriaProdutosEnum(CategoriaProdutosEnum categoriaProdutosEnum) {
         this.categoriaProdutosEnum = categoriaProdutosEnum;
     }
 }
