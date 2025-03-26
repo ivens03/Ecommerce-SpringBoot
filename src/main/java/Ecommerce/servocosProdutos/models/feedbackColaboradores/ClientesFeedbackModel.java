@@ -1,4 +1,4 @@
-package Ecommerce.servocosProdutos.models.feedbacks;
+package Ecommerce.servocosProdutos.models.feedbackColaboradores;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;

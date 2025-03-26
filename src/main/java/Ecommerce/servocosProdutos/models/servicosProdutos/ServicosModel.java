@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "servicos", schema = "vendas")
-public class ServicosModel extends FeedbackUsuariosModel implements Serializable {
+public class ServicosModel implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

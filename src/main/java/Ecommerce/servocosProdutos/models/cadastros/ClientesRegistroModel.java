@@ -1,6 +1,6 @@
 package Ecommerce.servocosProdutos.models.cadastros;
 
-import Ecommerce.servocosProdutos.models.feedbacks.ClientesFeedbackModel;
+import Ecommerce.servocosProdutos.models.feedbackColaboradores.ClientesFeedbackModel;
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -30,6 +30,21 @@ public class ClientesRegistroModel extends ClientesFeedbackModel implements Seri
 
     @Column(nullable = false)
     private LocalDate dataRegistroSistema = LocalDate.now();
+
+    @Column(name = "atualizadoEm")
+    private LocalDate atualizadoEm = LocalDate.now();
+
+    public void setDataRegistroSistema(LocalDate dataRegistroSistema) {
+        this.dataRegistroSistema = dataRegistroSistema;
+    }
+
+    public LocalDate getAtualizadoEm() {
+        return atualizadoEm;
+    }
+
+    public void setAtualizadoEm(LocalDate atualizadoEm) {
+        this.atualizadoEm = atualizadoEm;
+    }
 
     public Long getPessoaId() {
         return pessoaId;
